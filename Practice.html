@@ -1,66 +1,115 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>FourSquare</title>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	    <link rel="stylesheet"  type="text/css" href="Practice.css">
-	    <script src="Practice.js"></script>
-    </head>
-    <body>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#"></a></li>
-          <li><a href="About.html" class="nav-link">About</a></li> 
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
-             
+<head>
+    <title>SixSquare</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Practice.css">
+     <script src="Practice.js"></script>
+</head>
+
+<body>
     <div class="jumbotron">
-        <h1>Four Square</h1>
-        <input id="address" type="text" name="search" placeholder="Type in your address">
-        <input id="foods" type="text" name="search" placeholder="Type in your favorite food">
-        <button class="btn btn-primary">Search</button>
-    
+        <h1>Six Square</h1>
+        <input id="address" type="text" name="search" class="inputForm" placeholder="Type In Your Address">
+        <input id="food" type="text" name="search"  class="inputForm" placeholder="What Do You Want To Eat?">
+        <button class="btn btn-primary" id="search">Search</button>
+        <button class="btn btn-primary1" id="clear">Clear</button>
     </div>
-    <ul style="list-style-type:none">
-  <li>Alabama</li>
-  <li>Alaska</li>
-  <li>Arizona</li>
-  <li>Arkansas</li>
-  <li>California</li>
-  <li>Colorado</li>
-  <li>Connecticut</li>
-  <li>Delware</li>
-  <li>Florida</li>
-  <li>Georgia</li>
-  <li>Hawaii</li>
-  <li>Idaho</li>
-  <li>Illinois</li>
-  <li>Indiana</li>
-  <li>Iowa</li>
-  <li>Kansas</li>
-  <li>Kentucky</li>
-  <li>Louisianna</li>
-  <li>Maine</li>
-  <li>Maryland</li>
-  <li>Massachusetts</li>
-  <li>Michigan</li>
-  <li>Minnesota</li>
-  <li>Mississippi</li>
-  <li>Missouri</li>
-  <li>Montana</li>
-  <li>Nebraska</li>
-  <li>Nevada</li>
-  <li>New Hampshire</li>
-  <li>New Jersey</li>
-  <li>New Mexico</li>
-  <li>New York</li>
-  <li>North Carolina</li>
-  <li>North Dakota</li>
-  <li></li>
-</ul>
-       
-    </body>
+    <div id= ></div>
+
+    <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">States</button>
+        <div id="demo" class="collapse">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul style="list-style-type:none">
+                      <font color="white">
+                        <li>Alabama</li>
+                        <li>Alaska</li>
+                        <li>Arizona</li>
+                        <li>Arkansas</li>
+                        <li>California</li>
+                        <li>Colorado</li>
+                        <li>Connecticut</li>
+                        <li>Delware</li>
+                </div>
+                <div class="col-md-3">
+                    <ul style="list-style-type:none">
+                        <li>Idaho</li>
+                        <li>Illinois</li>
+                        <li>Indiana</li>
+                        <li>Iowa</li>
+                        <li>Kansas</li>
+                        <li>Kentucky</li>
+                        <li>Louisianna</li>
+                        <li>Maine</li>
+                </div>
+                <div class="col-md-3">
+                    <ul style="list-style-type:none">
+                        <li>Michigan</li>
+                        <li>Minnesota</li>
+                        <li>Mississippi</li>
+                        <li>Missouri</li>
+                        <li>Montana</li>
+                        <li>Nebraska</li>
+                        <li>Nevada</li>
+                        <li>New Hampshire</li>
+                </div>
+                <div class="col-md-3">
+                    <ul style="list-style-type:none">
+                        <li>New Jersey</li>
+                        <li>New Mexico</li>
+                        <li>New York</li>
+                        <li>North Carolina</li>
+                        <li>North Dakota</li>
+                        <li>Ohio</li>
+                        <li>Oklahoma</li>
+                        <li>Oregon</li>
+                </div>
+                <div class="col-md-3">
+                    <ul style="list-style-type:none">
+                        <li>Pennsylvania</li>
+                        <li>Rhode Island</li>
+                        <li>South Carolina</li>
+                        <li>South Dakota</li>
+                        <li>Tennessee</li>
+                        <li>Texas</li>
+                        <li>Utah</li>
+                        <li>Vermont</li>
+                </div>
+                <div class="col-md-3">
+                    <ul style="list-style-type:none">
+                        <li>Virginia</li>
+                        <li>Washington</li>
+                        <li>West Virginia</li>
+                        <li>Wisconsin</li>
+                        <li>Wyoming</li>
+                        <li>Florida</li>
+                        <li>Georgia</li>
+                        <li>Hawaii</li>
+                </div>
+                <div class="col-md-3">
+                    <ul style="list-style-type:none">
+                        <li>Maryland</li>
+                        <li>Massachusetts</li>
+                    </font>
+                  </ul>
+                </div>
+            </div>
+            
+
+            <div id="results">
+                <h1>Test</h1>
+                <button type="button" class="btn btn-danger" id="searchAgain">Search Again</button>
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+
+
+</body>
 
 
 </html>

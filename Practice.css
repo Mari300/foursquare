@@ -1,6 +1,26 @@
 body {
-    background-color: black;
+    background-color: #DDF2EB;
+    background-image: url('Floral 2.jpg');
+    /*background-position: center;*/
+
 }
+
 .jumbotron {
-    background-color: green;
+    background-image:url('Mint.jpg');
+    background-color: #63D471;
+    text-align: center;
+}
+
+input {
+    height: 35px;
+    width: 200px;
+}
+
+#results {
+    display: none;
+    margin: 10px;
+    text-align: center;
+}
+#demo { 
+    background-color: #FF8080;
 }
